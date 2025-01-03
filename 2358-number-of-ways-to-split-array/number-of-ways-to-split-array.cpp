@@ -3,8 +3,8 @@ public:
     int waysToSplitArray(vector<int>& nums) {
         int n=nums.size();
         long long sum=0;
-        for(int &num:nums){
-            sum+=num;
+        for(int num=0;num<n;num++){
+            sum+=nums[num];
         }
         long long leftS=0;
         long long rightS=0;
